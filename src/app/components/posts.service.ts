@@ -17,4 +17,8 @@ export class PostsService {
     .map((response) => response.json());
   }
 
+  getPost(postId):any {
+    return this.http.get(`${POST_API}${postId}`)
+    .map(response => response.json());
+  }
 }
