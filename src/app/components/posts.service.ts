@@ -5,7 +5,7 @@ import { Observable } from "rxjs/Observable";
 import 'rxjs/add/operator/map';
 import 'rxjs/add/observable/forkJoin';
 
-const POST_API: string = "https://jsonplaceholder.typicode.com/posts/";
+const POST_API: string = "http://localhost:3000/posts/";
 
 @Injectable()
 export class PostsService {

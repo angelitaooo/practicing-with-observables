@@ -1,6 +1,7 @@
-<p>
-  {{post | json}}
-</p>
+<h2>
+  {{post?.title}}
+</h2>
+<p>{{post?.body}}</p>
 <ul>
-  <li>{{postComments | json}}</li>
+  <li *ngFor="let comment of postComments">{{comment.name}}</li>
 </ul>
