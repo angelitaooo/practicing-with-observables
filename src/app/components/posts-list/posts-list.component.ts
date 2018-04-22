@@ -9,7 +9,7 @@ import { Post } from "../post.interface";
 })
 export class PostsListComponent implements OnInit {
   posts: Post[];
-  constructor(private postService: PostsService) { }
+  constructor(private postService: PostsService) {}
 
   ngOnInit() {
     this.postService.getPosts().subscribe(data => this.posts = data);
