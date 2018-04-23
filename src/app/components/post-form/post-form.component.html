@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Add a Title" formControlName="title">
+    <input type="text" placeholder="Add the body" formControlName="body">
+    <input 
+      type="number"
+      step="1"
+      min="1"
+      max="10"
+      formControlName="userId">
+      <button type="submit" [disabled]="form.invalid">Create New Post</button>
+  </form>
+</div>
